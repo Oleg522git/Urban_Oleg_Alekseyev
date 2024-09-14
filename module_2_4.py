@@ -14,7 +14,6 @@ for i in range(len(numbers)):
         continue
     else:
         for j in range(i+1):
-#            print(numbers[j] , 'is' , type(numbers[j]))
             if numbers[j] == 1 or numbers[j] == 0 or numbers[i] == numbers[j] or isinstance(numbers[j], int) != True:
                 continue
             else:
