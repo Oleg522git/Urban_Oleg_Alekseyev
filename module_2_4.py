@@ -1,4 +1,4 @@
-numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, '11' , 13 , 'hg']
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 13 , 'hg', '15']
 primes = []
 not_primes = []
 not_int = []
@@ -16,6 +16,7 @@ for i in range(len(numbers)):
             else:
                 ni_nj = numbers[i] % numbers[j]
                 is_prime = bool(is_prime * ni_nj)
+                if is_prime == False: break
     if (is_prime == True):
         primes.append(numbers[i])
     else:
